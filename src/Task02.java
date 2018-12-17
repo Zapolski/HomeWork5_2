@@ -1,3 +1,4 @@
+import java.io.ObjectInputStream;
 import java.util.Arrays;
 
 public class Task02 {
@@ -12,5 +13,10 @@ public class Task02 {
 
     public static int rnd (int min,int max){
         return (int)(Math.random()*((max-min)+1))+min;
+    }
+
+    public static void printMas(int[] mas){
+        for (int el: mas) System.out.print(el+"; ");
+        System.out.println();
     }
 }
